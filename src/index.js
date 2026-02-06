@@ -63,6 +63,7 @@
       version: EXT_VER,
       settings: (await import('./settings.js')).default,
       emoteMenu: (await import('./common/api/emote-menu.js')).default,
+      dcode: (await import('./modules/dcode/index.js')).default,
       watcher: {
         emitLoad: (name) => watcher.emit(`load.${name}`),
       },
